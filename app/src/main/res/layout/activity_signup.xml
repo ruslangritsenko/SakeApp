@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_pattern">
+
+    <RelativeLayout
+        android:id="@+id/activityRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/keybord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sign_up_logo_margin_top"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/sign_up_logo_width"
+                android:layout_height="@dimen/sign_up_logo_height"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_logo_gif"
+                android:fillViewport="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sing_in_with_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/keybord"
+            android:layout_marginTop="@dimen/sign_up_login_button_margin_top"
+            android:clickable="true"
+            android:background="@drawable/bg_twitter_button"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@drawable/bg_btn_logo_background"
+                android:src="@drawable/ic_img_twitter"
+                android:padding="15dp"/>
+
+            <!--<com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/btn_sing_in_with_twitter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"  />-->
+
+            <Button
+                android:id="@+id/btn_sing_in_with_twitter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:text="@string/sign_in_with_twitter"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sing_in_with_fb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_sing_in_with_twitter"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:background="@drawable/bg_fb_button"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bg_btn_logo_background"
+            android:src="@drawable/ic_img_fb"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btn_sing_in_with_fb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/sign_in_with_fb"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            android:layout_weight="0.75"
+            android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sing_in_with_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_sing_in_with_fb"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_email_button"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/bg_btn_logo_background"
+            android:src="@drawable/ic_img_email"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btn_sing_in_with_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/sign_in_with_email"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            android:layout_weight="0.75"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_register_with_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sing_in_with_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:text="@string/register_with_email"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+    </RelativeLayout>
+</ScrollView>

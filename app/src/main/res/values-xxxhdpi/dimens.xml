@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="main_fragment_sliding_up_panel_full_height">123dp</dimen>
+    <dimen name="main_fragment_sliding_up_panel_default_height">68dp</dimen>
+    <dimen name="main_fragment_sliding_up_panel_filter_height">118dp</dimen>
+    <dimen name="oac_today_child_hori_separator_margin_top">-7dp</dimen>
+    <dimen name="dash_board_bg_image_hight">247dp</dimen>
+
+</resources>

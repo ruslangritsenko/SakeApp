@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_select_country"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height"
+            android:paddingLeft="@dimen/spinner_padding"/>
+
+        <Spinner
+            android:id="@+id/sp_select_city"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_below="@+id/sp_select_country"
+            android:paddingLeft="@dimen/spinner_padding"/>
+
+        <Spinner
+            android:id="@+id/sp_select_province"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/sp_select_city"
+            android:layout_height="@dimen/spinner_height"
+            android:paddingLeft="@dimen/spinner_padding"/>
+
+
+        <Button
+            android:id="@+id/apply_btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_btn_sign_in"
+            android:layout_marginBottom="10dp"
+            android:text="@string/radius_apply_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/chk_3_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/three_km"
+            android:textColor="@color/dark_text_color"
+            android:textSize="@dimen/menu_text_size" />
+
+        <CheckBox
+            android:id="@+id/chk_5_km"
+            android:layout_below="@+id/chk_3_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/five_km"
+            android:textColor="@color/dark_text_color"
+            android:textSize="@dimen/menu_text_size" />
+
+        <CheckBox
+            android:id="@+id/chk_10_km"
+            android:layout_below="@+id/chk_5_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ten_km"
+            android:textColor="@color/dark_text_color"
+            android:textSize="@dimen/menu_text_size" />
+
+        <CheckBox
+            android:id="@+id/chk_15_km"
+            android:layout_below="@+id/chk_10_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteen_km"
+            android:textColor="@color/dark_text_color"
+            android:textSize="@dimen/menu_text_size" />
+
+        <Button
+            android:id="@+id/apply_btn_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_btn_sign_in"
+            android:layout_marginBottom="10dp"
+            android:text="@string/radius_apply_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

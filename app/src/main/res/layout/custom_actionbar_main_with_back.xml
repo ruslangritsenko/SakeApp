@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/action_bar_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar_gradient_bottom">
+
+            <ImageView
+                android:id="@+id/imgVback"
+                android:layout_width="30dp"
+                android:layout_height="@dimen/drawer_height_width"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/drawer_left_margin"
+                android:layout_marginRight="@dimen/drawer_left_margin"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/text_notification_count"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgVback"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:background="@drawable/bg_notification_count_lable"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp">
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bg_search_view"
+                    android:iconifiedByDefault="true"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxWidth="@dimen/search_bar_width"
+                    android:queryHint="Search here" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

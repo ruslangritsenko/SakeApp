@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+
+    <string-array name="sake_filter_headers">
+        <item>CLASSIFICATION</item>
+        <item>FILTRATION METHOD</item>
+        <item>YEASTS</item>
+        <item>PRESS AND SQUEEZE</item>
+    </string-array>
+
+    <string-array name="sake_type">
+        <item>JUNMAIDAIGINJOSHU</item>
+        <item>JUNMAIGINJOSHU</item>
+        <item>TOKUBETSUJUNMAISHU</item>
+        <item>JUNMAISHU</item>
+        <item>DAIJINJOSHU</item>
+        <item>GINJOSHU</item>
+        <item>TOKEBETSUHONJOZOSHU</item>
+        <item>HONJOZOSHU</item>
+        <item>SPARKING</item>
+        <item>MIXEDLIQUOR</item>
+        <item>OTHER</item>
+    </string-array>
+
+    <string-array name="sake_filterWaters">
+        <item>MUROKAGENSHU</item>
+        <item>MUROKA</item>
+        <item>GENSHUMUKASHI</item>
+        <item>OTHER</item>
+    </string-array>
+
+    <string-array name="sake_yeasts">
+        <item>KYOKAI_NO9</item>
+        <item>KYOKAI_NO7</item>
+        <item>KYOKAI_NO12</item>
+        <item>KYOKAI_NO14</item>
+        <item>KYOKAI_NO101</item>
+        <item>KYOKAI_NO901</item>
+        <item>AK_1</item>
+        <item>ALPS_YEAST</item>
+        <item>F710</item>
+        <item>CEL_19</item>
+        <item>OTHERS</item>
+    </string-array>
+
+    <string-array name="sake_press_and_squeezes">
+        <item>ARABASHIRI</item>
+        <item>NAKADORI_NAKAGUMO_NAKADARE</item>
+        <item>SEME_OSHIKIRI</item>
+        <item>FUKUROTURI_FUKUROSHIBORI_TSURUSHIZAKE</item>
+        <item>TOBINDORI_TOBINKAKOI</item>
+        <item>ORIGARAMI</item>
+        <item>NIGORIZAKE</item>
+        <item>OTHER</item>
+    </string-array>
+
+
+</resources>
